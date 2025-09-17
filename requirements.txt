@@ -1,28 +1,20 @@
-aiofiles==*
-aiogram==*
-aiohappyeyeballs==*
-aiohttp==*
-aiosignal==*
-annotated-types==*
-anyio==*
-attrs==*
-certifi==*
-frozenlist==*
-h11==*
-httpcore==*
-httpx==*
-idna==*
-magic-filter==*
-multidict==*
-propcache==*
-pydantic==*
-pydantic_core==*
-python-dotenv==*
-ruff==*
-setuptools==*
-sniffio==*
-typing-inspection==*
-typing_extensions==*
-uvloop==*
-wheel==*
-yarl==*
+# Core Telegram Bot Framework
+aiogram==3.22.0
+
+# HTTP Client for API requests
+httpx==0.28.1
+
+# Environment variables management
+python-dotenv==1.1.1
+
+# Video download and processing
+yt-dlp==2025.9.5
+
+# Development and code quality
+ruff==0.13.0
+
+# Optional: Audio processing (commented out - not currently used)
+# pydub==0.25.1
+
+# Note: All other dependencies (aiohttp, aiofiles, etc.) are automatically 
+# installed as dependencies of the packages above
