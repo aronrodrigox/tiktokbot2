@@ -1,0 +1,15 @@
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+fix = true
+
+[tool.ruff.lint]
+select = ["E","F","I","UP","N","B","Q","RUF"]
+ignore = []
+
+[tool.ruff.lint.per-file-ignores]
+"app/bot/handlers/start.py" = ["RUF001"]
+"app/bot/handlers/tiktok.py" = ["RUF001"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
