@@ -32,8 +32,8 @@ class BotApplication:
         self._dispatcher.message.middleware(ActivityLogMiddleware(self._log_controller))
         self._dispatcher.message.middleware(UserTrackerMiddleware())
         providers = [
-            TikwmProvider(timeout_sec=10.0),          # 1-й метод (основной)
-            YtDlpLocalProvider(timeout_sec=20.0),     # 2-й метод
+            YtDlpLocalProvider(timeout_sec=20.0),     # 1-й метод (основной)
+            TikwmProvider(timeout_sec=10.0),          # 2-й метод
         ]
         self._resolver = MultiProviderResolver(providers)
 
